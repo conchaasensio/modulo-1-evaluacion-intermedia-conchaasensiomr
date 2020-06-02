@@ -42,6 +42,7 @@ html {
   display: block;
   width: 155px;
   padding: 15px;
+  margin-bottom: 10px;
 }
 
 .header-logo img {
@@ -57,6 +58,8 @@ html {
   text-align: center;
   text-transform: uppercase;
   padding: 20px;
+  font-family: var(--menu-color);
+  font-weight: var(--regular-weight);
 }
 
 /* MAIN */
