@@ -89,14 +89,14 @@ html {
     flex-direction: row;
     justify-content: space-between;
   }
-  .header-menu,
-  .header-logo {
+  .header-menu {
     margin-right: 30px;
   }
 
   .header-logo {
     margin-top: 20px;
     margin-bottom: 20px;
+    margin-left: 30px;
   }
 
   .header-menu li {
