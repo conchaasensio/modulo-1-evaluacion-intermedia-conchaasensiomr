@@ -77,6 +77,7 @@ html {
   color: var(--light-color);
   text-transform: capitalize;
   font-weight: var(--bold-weight);
+  font-size: 30px;
 }
 
 .main-title span {
