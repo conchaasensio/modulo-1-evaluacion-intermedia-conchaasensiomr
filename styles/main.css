@@ -1,109 +1,103 @@
 * {
   box-sizing: border-box;
   color: inherit;
-  list-style-type: none;
+  margin: 0;
   text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
 }
 
 :root {
   /* COLORS */
 
-  --menu-color: #4a4a4a;
-  --background-color: #3cdbc0;
+  --primary-color: #3cdbc0;
+  --dark-color: #4a4a4a;
   --light-color: #ffffff;
 
   /* FONTS */
 
   --primary-font: "Rubik", sans-serif;
-  --regular-weight: 400px;
-  --bold-weight: 900px;
 }
 
 html {
   font-family: var(--primary-font);
   font-size: 16px;
+  color: var(--dark-color);
 }
 
 /* HEADER */
 
 .header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-bottom: 3px;
+  padding-top: 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  text-align: center;
   background-color: var(--light-color);
 }
 
 .header-logo {
-  display: block;
+  display: inline-block;
   width: 155px;
-  margin-bottom: 10px;
 }
 
 .header-logo img {
   width: 100%;
 }
 
-.header-menu {
-  display: block;
-  margin-bottom: 13px;
+.header-menu ul li {
+  display: inline-block;
 }
 
-.header-menu li {
-  display: inline-block;
-  text-align: center;
+.header-menu ul li a {
   text-transform: uppercase;
-  padding: 20px;
-  font-family: var(--menu-color);
-  font-weight: var(--regular-weight);
+  padding: 10px;
+  display: inline-block;
 }
 
 /* MAIN */
 
 .main {
   height: 100vh;
+  text-align: center;
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  background-color: var(--background-color);
+  align-items: center;
+  background-color: var(--primary-color);
+  color: var(--light-color);
+  position: relative;
+  top: 118px;
 }
 
 .main-title {
-  color: var(--light-color);
   text-transform: capitalize;
-  font-weight: var(--bold-weight);
-  font-size: 30px;
+  font-size: 1.875rem;
 }
 
 .main-title span {
   display: block;
-  text-align: center;
 }
 
 @media all and (min-width: 768px) {
   .header {
     flex-direction: row;
     justify-content: space-between;
-  }
-  .header-menu {
-    margin-right: 30px;
-  }
-
-  .header-logo {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 30px;
-  }
-
-  .header-menu li {
-    font-size: 16px;
+    padding: 20px 30px 20px 30px;
   }
 
   .main-title {
-    font-size: 40px;
+    font-size: 2.5rem;
+  }
+
+  .main {
+    top: 105px;
   }
 }
